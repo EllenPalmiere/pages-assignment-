@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ellen Palmiere</title>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="stylesheet.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+ .lacrosse {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.additionalinfo {
+    text-align: center;
+}
+.background {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+<div class="container1">
+<div class="logo">
+<img src="pimages/plogo.png" alt="logo">
+</div>
+<nav>
+    <div><a href="#home">Home</a></div>
+    <div><a href="#about">About</a></div>
+    <div><a href=#projects>Projects</a></div>
+    <div><a href=#internships>Internships</a></div>
+    <div><a href=#resume>Resume</a></div>
+</nav>
+<div class="overlay">
+    <p class="back" id="home">Ellen Palmiere</p>
+</div>
+</div>
+<div class="container2" id="projects">
+<div class="web1" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
+    <img src="pimages/5k.png" alt="5k">
+    <p>SMAD 202: Designed and constructed mock interviews for my own applications idea. Using Axure to link each page of Discovering Authentic so the user can get a general feel of what the app might look like.</p>
+</div>
+<div class="web2" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="200">
+    <img src="pimages/proust.jpg" alt="proust">
+    <p>Using Adobe Photoshop and Illustrator I designed a flyer for a student organization here at James Madison University, Proust. </p>
+</div>
+<div class="web3" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="200">
+    <img src="pimages/discoveringauthentic.jpg" alt="discovering">
+    <p>Discovering Authentic consumer reports on WordPress. I took the mock interviews and displayed them onto this document. </p>
+</div>
+</div>
+<div class="container3">
+    <div class="single" id="about">
+        <h1>About Me</h1>
+        <img src="pimages/camerashot.JPG" alt="camera">
+        <p>Hello, my name is Ellen Palmiere. I'm currently a junior undergrad student at James Madison University and am a part of the Women's D1 lacrosse program here. My major is Media Arts & Design with a concentration in Interactive Design and a minor in Creative Writing. When I'm not balancing school and sports, you can find me reading any Colleen Hoover book or completing a sudoku puzzle. I love problem solving and working with others to create something amazing. Teamwork is something I truly value and believe to be one of the greatest skills someone can have.</p>
+</div>
+    </div>
+<div class="container4" id="internships">
+    <img src="pimages/internship.png" alt="internship">
+    <div class="internship">
+        <div class="background">
+        <h1>Internships</h1>
+        <p>For summer of 2022 I will be interning for two comapnies: Pro Sport Outlook and Julie Parker Communications. Starting in late may, I will design wall graphics of MLB, NFL, and NBA players along with their records.</p> 
+    </div>
+</div>
+    </div>
+
+    <div class="container5" id="resume">
+<div class="web4" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
+    <img src="pimages/wordpress.jpg" alt="wordpress">
+    <p>In a previous School of Media Art and Design class I used Wordpress to showcase my past projects. These included: User Research, Information Architecture, User Story Narratives, and Technical specifications. It explains, in depth, the verious Adobe applications i used as well. </p>
+    </div>
+    <div class="web5" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="200">
+        <h1>Wordpress and Resume</h1>
+    </div>
+    <div class="web6" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="200">
+        <img src="pimages/portfolio.jpg" alt="portfolio">
+     <p>Using Word, I created my resume for companies to observe when i apply for an internship or job. Summer of 2022 i will be Interning for Pro Sports Outlook in Virginia creating wall art of NFL, MLB, and NBA athletes. </p>
+    </div>
+    </div>
+    <div class="container6">
+        <div class="additionalinfo">
+            <div class="lacrosse">
+            <h1>Additional Information</h1>
+            <p>Three-year D1 Women's Lacrosse Athlete- Dedicated twenty hours a week to practice, games, film, and travel while maintaining a rigorous academic course load in person and online.CAA Commissioner's Academic Honor Roll: Spring 2020, Fall, 2021, and Spring 2021.Volunteered with Potomac Community Resources and assissted adults with developmental differences.</p>
+        </div>
+        </div>
+
+    </div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+<div><a id="back2Top" title="Back to top" href="#">&#10148;</a></div>
+
+<script>
+/* Scroll to top when arrow up clicked BEGIN */
+$(window).scroll(function() {
+var height = $(window).scrollTop();
+if (height > 100) {
+$('#back2Top').fadeIn();
+} else {
+$('#back2Top').fadeOut();
+}
+});
+$(document).ready(function() {
+$("#back2Top").click(function(event) {
+event.preventDefault();
+$("html, body").animate({ scrollTop: 0 }, "slow");
+return false;
+});
+
+});
+/* Scroll to top when arrow up clicked END */
+</script>
+</body>
+</html>
